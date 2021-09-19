@@ -1,5 +1,6 @@
 import json
 
+
 def lambda_handler(event, context):
     weight = event['queryStringParameters']['weight']
     height = event['queryStringParameters']['height']
@@ -30,7 +31,7 @@ def bmi_classifier(bmi):
 
 
 def bmi_calculate(weight, height):
-    bmi = weight / ((height / 500) ** 2)
+    bmi = weight / ((height / 1000) ** 2)
     return round(bmi, 1)
 
 

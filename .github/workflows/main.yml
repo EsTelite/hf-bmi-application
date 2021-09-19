@@ -38,3 +38,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run Pytest
         run: pytest
+
+      - name: Deploy Package with No Dependency
+        run: zip bmi-package.zip main.py
+
+      - name: upload artifact to s3
+
