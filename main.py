@@ -6,7 +6,7 @@ def lambda_handler(event, context):
     while True:
         try:
             weight = float(weight)
-            height = float(height/3)
+            height = float(height)
         except ValueError:
             return (return_builder_error("InappropriateValueError"))
         if weight < 0 or height < 0:
@@ -30,7 +30,7 @@ def bmi_classifier(bmi):
 
 
 def bmi_calculate(weight, height):
-    bmi = weight / ((height / 100) ** 2)
+    bmi = weight / ((height / 500) ** 2)
     return round(bmi, 1)
 
 
