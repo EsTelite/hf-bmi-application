@@ -6,7 +6,7 @@ def lambda_handler(event, context):
     while True:
         try:
             weight = float(weight)
-            height = float(height/2)
+            height = float(height/3)
         except ValueError:
             return (return_builder_error("InappropriateValueError"))
         if weight < 0 or height < 0:
