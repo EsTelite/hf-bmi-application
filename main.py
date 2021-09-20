@@ -21,13 +21,13 @@ def lambda_handler(event, context):
 
 def bmi_classifier(bmi):
     if 18.5 <= bmi <= 24.9:
-        return "healthy"
+        return "Healthy"
     elif bmi >= 25.0:
-        return "overweight"
+        return "Overweight"
     elif bmi < 18.5:
-        return "underweight"
+        return "Underweight"
     else:
-        return "not classified"
+        return "Not Classified"
 
 
 def bmi_calculate(weight, height):
