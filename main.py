@@ -2,7 +2,7 @@ import json
 
 
 def lambda_handler(event, context):
-    if 'queryStringParameters' in event and 'order' in event['queryStringParameters']:
+    if 'queryStringParameters' in event and 'weight' in event['queryStringParameters'] and 'height' in event['queryStringParameters']:
         pass
     else:
         return return_builder_error("weight and height parameter required")
