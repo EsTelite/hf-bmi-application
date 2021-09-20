@@ -31,7 +31,7 @@ def bmi_classifier(bmi):
 
 
 def bmi_calculate(weight, height):
-    bmi = weight / ((height / 1000) ** 2)
+    bmi = weight / ((height / 100) ** 2)
     return round(bmi, 1)
 
 
