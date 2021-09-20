@@ -2,10 +2,14 @@ import json
 
 
 def lambda_handler(event, context):
-    weight = event['queryStringParameters']['weight']
-    height = event['queryStringParameters']['height']
+    if 'queryStringParameters' in event and 'order' in event['queryStringParameters']:
+        pass
+    else:
+        return return_builder_error("weight and height parameter required")
     while True:
         try:
+            weight = event['queryStringParameters']['weight']
+            height = event['queryStringParameters']['height']
             weight = float(weight)
             height = float(height)
         except ValueError:
