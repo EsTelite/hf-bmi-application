@@ -80,7 +80,7 @@
 This is a simple API Service that can be used to calculate Body Mass Index (BMI) and classify BMI value. 
 This API running on top of AWS Lambda and API Gateway, below are the picture for the flow requests:</br>
   <a href="https://github.com/EsTelite/hf-bmi-application">
-    <img src="images/flow-req.png" alt="Logo" width="1280" height="720">
+    <img src="images/flow-req.png" alt="Logo" width="653" height="317">
   </a>
 
 
